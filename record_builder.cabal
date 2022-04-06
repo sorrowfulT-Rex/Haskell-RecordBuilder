@@ -1,0 +1,10 @@
+cabal-version: 2.4
+name: record-builder
+version: 0.1.0.0
+
+executable record-builder
+    main-is: RecordBuilder.hs
+    other-modules: Data, Parser, Example.Example1
+    build-depends: base, transformers, megaparsec, containers
+    default-language: Haskell2010
+    ghc-options: -O3 -Wall -fwarn-tabs
