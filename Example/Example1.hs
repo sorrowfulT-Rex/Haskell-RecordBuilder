@@ -1,5 +1,7 @@
 module Example.Example1 where
 
+-- At the root folder, run "cabal run record-builder -v0 Example/Example1.hs".
+
 data Tree a = Empty
             | Leaf { value :: a }
             | Node { left  :: Tree a
