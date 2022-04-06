@@ -150,6 +150,7 @@ modifyNext' _mmzkList _modifier = case _mmzkList of
 isVBool :: VBool -> Bool
 isVBool VBool {} = True
 getBool :: VBool -> Maybe (Bool)
+
 getBool _mmzkVBool = case _mmzkVBool of
   VBool {} -> Just $ bool _mmzkVBool
 

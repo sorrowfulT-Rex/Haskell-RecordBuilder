@@ -17,7 +17,8 @@ buildData (Data preLen name cons) = do
     putStrLn $ funcName ++ " :: " ++ name ++ " -> " ++ "Bool"
     putStrLn $ funcName ++ " " ++ n ++ " {} = True"
     unless (length cons == 1) . putStrLn
-      $ funcName ++ " _ " ++ replicate (length n + 2) ' ' ++ "= False\n"
+      $ funcName ++ " _ " ++ replicate (length n + 2) ' ' ++ "= False"
+    putStrLn ""
   -- Getters
   forM_ fieldNames $ \f -> do
     let funcName = addPre "get" f
